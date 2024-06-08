@@ -1,4 +1,4 @@
-// Question 1:
+    // Question 1:
 // Write a JavaScript for loop that iterates from 0 to 20 and prints only the even numbers, but skips the number 10.
 
 // for(let i = 0;i<=20;i++){
@@ -37,21 +37,21 @@
 // Create a JavaScript function that takes an array of numbers as input and returns the sum of 
 // all the even numbers using a for loop.
 
-array = [1,2,3,4,5];
+// array = [1,2,3,4,5];
   
-  function SumAarray(array){
-    let sum = 0;
-    for(let i = 0;i<array.length;i++){
+//   function SumAarray(array){
+//     let sum = 0;
+//     for(let i = 0;i<array.length;i++){
 
-      if(i%2==0){
-        sum += array[i];
+//       if(i%2==0){
+//         sum += array[i];
 
-      }
-    }
-    return sum;
+//       }
+//     }
+//     return sum;
 
-  }
-  console.log(SumAarray(array));
+//   }
+//   console.log(SumAarray(array));
 
 
 
@@ -91,6 +91,31 @@ array = [1,2,3,4,5];
 
 //     }
 // console.log(sum);
+
+
+// Question 8:
+// Write a JavaScript function that takes a string as input and returns the reverse of the 
+// string without using a built-in reverse method, using a for loop.
+
+
+// let str = "JavaScript";
+
+// function StrReverse(str){
+//     let reverse = "";
+//     for(let i = str.length-1; i>=0; i--){
+//         // console.log(str[i]);
+//         reverse += str[i]
+//     }
+//      return reverse;
+// }
+  
+//     console.log(StrReverse(str[i]));
+
+
+
+
+
+
 
 
 
