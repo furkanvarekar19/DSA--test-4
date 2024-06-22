@@ -100,16 +100,19 @@
 
 // let str = "JavaScript";
 
-// function StrReverse(str){
-//     let reverse = "";
-//     for(let i = str.length-1; i>=0; i--){
-//         // console.log(str[i]);
-//         reverse += str[i]
+// function reverseString(str) {
+//     let reversed = "";
+
+//     for (let i = str.length - 1; i >= 0; i--) {
+
+//       reversed += str[i];
 //     }
-//      return reverse;
-// }
+//     return reversed;
+//   }
   
-//     console.log(StrReverse(str[i]));
+//   const originalString = "hello world";
+//   const reversedString = reverseString(originalString);
+//   console.log(reversedString); 
 
 
 
