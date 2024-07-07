@@ -1,26 +1,23 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './store/store';
 import Login from './components/Login';
 import Home from './components/Home';
-import { useSelector } from 'react-redux';
 import './App.css';
 
-function App() {
-
-  const isLoggedIn = useSelector(state => state.isLoggedIn);
+const App = () => {
   return (
-    <div className="App">
-    <Router>
-            <Routes>
-                <Route path="/login" element={<Login />} />
-                <Route path="/home" element={isLoggedIn ? <Home /> : <Navigate to="/login" />} />
-                <Route path="*" element={<Navigate to="/login" />} />
-            </Routes>
-        </Router>
-
-  
-    </div>
+    <Provider store={store}>
+          <h1>Login</h1>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </Router>
+    </Provider>
   );
-}
+};
 
 export default App;
